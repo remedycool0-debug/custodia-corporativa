@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>:root{--accent:#2BB673;--accentd:#1E9E5E;--dark:#1E2A38;--darker:#0F1822;--ink:#1E2A38;--gray:#666;--line:#dfe3e7;--soft:#F5F6F8;--white:#fff;--title:'Montserrat',sans-serif;--body:'Montserrat',sans-serif;--radius:14px;--shadow:0 18px 50px -20px rgba(15,24,34,.38)}
+<style>:root{--accent:#3563A6;--accentd:#244A82;--dark:#1E2A38;--darker:#0F1822;--ink:#1E2A38;--gray:#666;--line:#dfe3e7;--soft:#F5F6F8;--white:#fff;--title:'Montserrat',sans-serif;--body:'Montserrat',sans-serif;--radius:14px;--shadow:0 18px 50px -20px rgba(15,24,34,.38)}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:var(--body);color:var(--ink);background:#fff;line-height:1.6;overflow-x:hidden}
 img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
@@ -23,14 +23,14 @@ h1,h2,h3{font-family:var(--title);font-weight:800;line-height:1.15;color:var(--i
 .sec-head p{color:var(--gray)}
 .btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--body);font-weight:700;font-size:.95rem;padding:14px 28px;border-radius:50px;cursor:pointer;border:2px solid transparent;transition:.25s;white-space:nowrap}
 .btn-primary{background:var(--accent);color:#fff}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px -10px #2BB673aa}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px -10px #3563A6aa}
 .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 .btn-ghost:hover{background:#fff;color:var(--darker)}
 .btn-dark{background:var(--accent);color:#fff}
 .btn-dark:hover{filter:brightness(.92)}
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:86px}
-.brand{display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}.brand img{height:56px;width:auto;border-radius:10px;display:block}
 .logo-mark{width:50px;height:50px;border-radius:13px;background:linear-gradient(150deg,var(--dark),var(--darker));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px -8px rgba(0,0,0,.45);flex:0 0 50px}
 .logo-mark svg{width:27px;height:27px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .logo-name{display:flex;flex-direction:column;line-height:1}
@@ -72,7 +72,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdro
 .why h2{color:#fff;font-size:clamp(2rem,4.2vw,2.8rem);margin:12px 0 18px}
 .why p.lead{color:rgba(255,255,255,.8);margin-bottom:28px}
 .feat{display:flex;gap:16px;margin-bottom:22px}
-.feat .fi{flex:0 0 46px;height:46px;border-radius:12px;background:#2BB6732e;display:flex;align-items:center;justify-content:center}
+.feat .fi{flex:0 0 46px;height:46px;border-radius:12px;background:#3563A62e;display:flex;align-items:center;justify-content:center}
 .feat .fi svg{width:22px;height:22px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .feat h4{font-family:var(--body);font-weight:700;margin-bottom:3px}
 .feat p{color:rgba(255,255,255,.7);font-size:.92rem}
@@ -104,7 +104,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdro
 form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}
 form label{font-size:.85rem;font-weight:600;display:block;margin-bottom:6px}
 form input,form textarea{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font-family:var(--body);font-size:.95rem;margin-bottom:18px}
-form input:focus,form textarea:focus{outline:none;border-color:var(--accentd);box-shadow:0 0 0 3px #2BB67333}
+form input:focus,form textarea:focus{outline:none;border-color:var(--accentd);box-shadow:0 0 0 3px #3563A633}
 form .btn{width:100%;justify-content:center}
 footer{background:var(--darker);color:rgba(255,255,255,.7);padding:70px 0 0}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:40px;padding-bottom:50px}
@@ -129,7 +129,7 @@ footer ul a{font-size:.92rem;transition:.2s}footer ul a:hover{color:var(--accent
 </head>
 <body>
 <header><div class="container nav">
-<a class="brand" href="#"><span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="logo-name"><span>Custodia</span><i>CORPORATIVA</i></span></a>
+<a class="brand" href="#"><img src="assets/logo.png" alt="Custodia Corporativa"></a>
 <ul class="menu" id="menu">
 <li><a href="#inicio">Inicio</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contáctanos</a></li>
 </ul>
